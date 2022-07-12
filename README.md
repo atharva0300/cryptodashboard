@@ -1,4 +1,10 @@
 # Description
+This is a website to check all the information about crypto coins and get the latest information about what's happening in the Crypto World. 
+<br>App Link - <a href = "https://atharva0300.github.io/cryptodashboard">https://atharva0300.github.io/cryptodashboard</a>
+
+## Api's used 
+1. <a href = "https://rapidapi.com/Coinranking/api/coinranking1/">coinrank API</a>
+2. <a href = "https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/">Bing News Search API</a>
 
 # Screenshots
 ### Check Global Crypto Stats
@@ -21,10 +27,17 @@
 ![Screenshot from 2022-07-12 14-10-44](https://user-images.githubusercontent.com/76089814/178448700-ded887a5-cd7c-411f-a109-7ff2c862f70a.png)
 
 # Video
+https://user-images.githubusercontent.com/76089814/178463530-9ce7d6bd-4104-42a6-b672-83cb049e9aee.mp4
 
 ## Features
+1. Provides Coin price and coin information
+2. Provides coin history ( of various time Periods ) 
+3. Provides Latest News about any crypto coin or cryptocurrency in general
+4. Graphical visualization of coin price history
+5. Provides data of around 100 coins and upto 12 latest news
 
 ## Dependencies
+![dependencies](https://user-images.githubusercontent.com/76089814/178465459-bd32690e-9ddb-44e2-980f-3667076802b9.png)
 
 
 # Getting Started with Create React App
