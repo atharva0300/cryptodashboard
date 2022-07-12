@@ -1,3 +1,23 @@
+# Screenshots
+![crypto-1](https://user-images.githubusercontent.com/76089814/178448629-d7ecd6b8-4b88-413c-8b83-5728893db4ed.png)
+![crypto-2](https://user-images.githubusercontent.com/76089814/178448637-049c6ecc-1247-4bea-befb-a878e31eca5a.png)
+![Screenshot from 2022-07-12 14-09-08](https://user-images.githubusercontent.com/76089814/178448645-a22d43e4-5628-4a57-bdfe-f05873bbe1b4.png)
+![Screenshot from 2022-07-12 14-09-14](https://user-images.githubusercontent.com/76089814/178448649-c114d650-5045-4180-a4e0-fdd02578b089.png)
+![Screenshot from 2022-07-12 14-09-16](https://user-images.githubusercontent.com/76089814/178448652-e5c48179-6084-455d-9f92-7104a4115ace.png)
+![Screenshot from 2022-07-12 14-09-48](https://user-images.githubusercontent.com/76089814/178448660-79370b69-09fe-4193-b118-93eda448cd6b.png)
+![Screenshot from 2022-07-12 14-10-10](https://user-images.githubusercontent.com/76089814/178448662-67885fb4-ebe5-4e92-9e87-2635a1b1d765.png)
+![Screenshot from 2022-07-12 14-10-12](https://user-images.githubusercontent.com/76089814/178448674-555e2220-7cd7-47bc-b385-96c92ae5a660.png)
+![Screenshot from 2022-07-12 14-10-20](https://user-images.githubusercontent.com/76089814/178448682-5586b343-e258-4f1f-9ce5-99cc6d3e28ad.png)
+![Screenshot from 2022-07-12 14-10-28](https://user-images.githubusercontent.com/76089814/178448692-9675d1d2-069b-460f-9c42-704bab446211.png)
+![Screenshot from 2022-07-12 14-10-44](https://user-images.githubusercontent.com/76089814/178448700-ded887a5-cd7c-411f-a109-7ff2c862f70a.png)
+
+# Video
+
+## Features
+
+## Dependencies
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
