@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 
 function Loader() {
   return (
-    <motion.div>Loading...</motion.div>
+    <motion.div>Loading... </motion.div>
   )
 }
 
