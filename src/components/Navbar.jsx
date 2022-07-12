@@ -36,7 +36,7 @@ function Navbar() {
         <motion.div className = "logo-container" initial={{y : 1920}} animate = {{y : 0}} transition = {{duration : 0.5, ease : 'easeOut'}}>
             <Avatar src = {icon} size = "large" />
             <Typography.Title level = {2} className = "logo">
-                <Link to = "/">Cryptodashboard</Link>
+                <Link to = "/cryptodashboard">Cryptodashboard</Link>
             </Typography.Title>
             <Button className = 'menu-control-container' onClick={() => setActiveMenu(!activeMenu)}>
                 <MenuOutlined />
@@ -45,16 +45,16 @@ function Navbar() {
 
         {activeMenu && <Menu theme = "dark">
             <Menu.Item icon = {<HomeOutlined />}>
-                <Link to = "/">Home</Link>
+                <Link to = "/cryptodashboard">Home</Link>
             </Menu.Item>
             <Menu.Item icon = {<FundOutlined />}>
-                <Link to = "/cryptocurrency">Cryptocurrencies</Link>
+                <Link to = "/cryptodashboard/cryptocurrency">Cryptocurrencies</Link>
             </Menu.Item>
             <Menu.Item icon = {<MoneyCollectOutlined />}>
-                <Link to = "/exchanges">Exchanges</Link>
+                <Link to = "/cryptodashboard/exchanges">Exchanges</Link>
             </Menu.Item>
             <Menu.Item icon = {<BulbOutlined />}>
-                <Link to = "/news">News</Link>
+                <Link to = "/cryptodashboard/news">News</Link>
             </Menu.Item>
         </Menu>}
     </div>
