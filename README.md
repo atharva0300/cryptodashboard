@@ -26,9 +26,6 @@ This is a website to check all the information about crypto coins and get the la
 ### Search for a particular coin in the Crypto List
 ![Screenshot from 2022-07-12 14-10-44](https://user-images.githubusercontent.com/76089814/178448700-ded887a5-cd7c-411f-a109-7ff2c862f70a.png)
 
-# Video
-https://user-images.githubusercontent.com/76089814/178463530-9ce7d6bd-4104-42a6-b672-83cb049e9aee.mp4
-
 ## Features
 1. Provides Coin price and coin information
 2. Provides coin history ( of various time Periods ) 
