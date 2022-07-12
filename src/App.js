@@ -16,11 +16,11 @@ function App() {
           <Layout>
             <div className='routes'>
               <Routes>
-                <Route exact path = "/" element = {<Homepage />} />
-                <Route exact path = "/exchanges" element = {<Exchanges />} />
-                <Route exact path = "/cryptocurrency" element = {<Cryptocurrencies />} />
-                <Route exact path = '/crypto/:coinUUID' element = {<CryptoDetails />} />
-                <Route exact path = "/news" element = {<News />} />
+                <Route exact path = "/cryptodashboard" element = {<Homepage />} />
+                <Route exact path = "/cryptodashboard/exchanges" element = {<Exchanges />} />
+                <Route exact path = "/cryptodashboard/cryptocurrency" element = {<Cryptocurrencies />} />
+                <Route exact path = '/cryptodashboard/crypto/:coinUUID' element = {<CryptoDetails />} />
+                <Route exact path = "/cryptodashboard/news" element = {<News />} />
               </Routes>
             </div>
           </Layout>
