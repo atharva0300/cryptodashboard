@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Select, Typography, Row, Col, Avatar, Card} from 'antd';
 import moment from 'moment';
+import {motion} from 'framer-motion';
 
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loader from './Loader';
 
 const { Text , Title }= Typography
 const { Option } = Select;
@@ -22,7 +24,7 @@ function News({simplified}) {
   console.log(cryptoNews)
 
   if(!cryptoNews?.value){
-    return 'Loading...';
+    return <Loader />
   }
 
 
@@ -48,10 +50,10 @@ function News({simplified}) {
                 {news.description > 100 ? `${news.description.substring(0,100)} ...` : news.description}
               </p>
               <div className='provider-container'>
-                <div>
+                <motion.div initial={{opacity : 0}} animate = {{opacity : 1}} transition= {{type : 'tween', duration : 4}}>
                   <Avatar src = {news.provider[0]?.image?.thumbnail?.contentUrl || demoImageUrl} alt = "news" />
                   <Text className='provider-name'>{news.provider[0]?.name}</Text>
-                </div>
+                </motion.div>
                 <Text>{moment(news.datePublished).startOf('ss').fromNow()}</Text>
               </div>
             </a>

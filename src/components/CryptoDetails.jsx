@@ -5,6 +5,7 @@ import millify from 'millify';
 import { Col , Row, Typography, Select} from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
 import { useState } from 'react';
+import Loader from './Loader';
 
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../services/cryptoApi';
 import {LineChart} from '../components';
@@ -23,13 +24,15 @@ function CryptoDetails() {
   const {data : coinHistory , isFetching} = useGetCryptoHistoryQuery({coinUUID,timePeriod})
 
   console.log(data);
+  console.log(coinHistory);
   console.log('coinId : ' , coinUUID);
   if(isFetching){
-    return 'Loading...';
+    return <Loader />
   }
   console.log('coinHistory : ' , coinHistory);
 
   const cryptoDetails = data?.data?.coin;
+  console.log('cryptoDetails : ' , cryptoDetails);
 
   const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 

@@ -4,6 +4,9 @@ import {Typography , Row, Col,Statistic } from 'antd';
 import { Link } from 'react-router-dom';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import  { Cryptocurrencies, News } from '../components';
+import {motion} from 'framer-motion';
+import Loader from './Loader';
+
 
 const {Title} = Typography;
 
@@ -16,7 +19,7 @@ function Homepage() {
     // using this global stats object to represent our stats
 
     if(isFetching){
-        return 'Loading...';
+        return <Loader />
     }
   return (
     <>
@@ -28,19 +31,19 @@ function Homepage() {
             <Col span = {12}><Statistic title = "Total 24th Volume" value= {millify(globalStats.total24hVolume)} /></Col>
             <Col span = {12}><Statistic title = "Total Markets" value= {millify(globalStats.totalMarkets)} /></Col>
         </Row>
-        <div className='home-heading-container'>
+        <motion.div className='home-heading-container' initial = {{x : 2000}} animate = {{x : 0}} transition={{type :'easeOut' , stiffness : 100, duration : 2}}>
             <Title level = {2} className = "home-title">Top 10 Cryptocurrencies in the world</Title>
             <Title level = {3} className= "show-more">
                 <Link to = "/cryptocurrency">Show More</Link>
             </Title>
-        </div>
-        <Cryptocurrencies simplified = {true} />
-        <div className='home-heading-container'>
+        </motion.div>
+        <Cryptocurrencies simplified = {true}/>
+        <motion.div className='home-heading-container' initial = {{x : 2000}} animate = {{x : 0}} transition={{type :'easeOut' , stiffness : 100, duration : 3}}>
             <Title level = {2} className="home-title">Latest Crypto News</Title>
             <Title level = {3} className="show-more">
                 <Link to = "/news">Show More</Link>
             </Title>
-        </div>
+        </motion.div>
         <News simplified/>
     </>
   )

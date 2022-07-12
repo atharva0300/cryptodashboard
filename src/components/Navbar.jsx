@@ -2,8 +2,9 @@ import React from 'react';
 import {Button , Menu , Typography , Avatar} from 'antd';
 import {Link} from 'react-router-dom';
 import {HomeOutlined , MoneyCollectOutlined , BulbOutlined , FundOutlined , MenuOutlined} from '@ant-design/icons';
-import icon from '../images/cryptocurrency.png';
+import icon from '../images/dashboard.png';
 import {useState, useEffect } from 'react';
+import {motion} from 'framer-motion';
 
 function Navbar() {
     const [activeMenu , setActiveMenu] = useState(true);
@@ -32,7 +33,7 @@ function Navbar() {
 
   return (
     <div className = "nav-container">
-        <div className = "logo-container">
+        <motion.div className = "logo-container" initial={{y : 1920}} animate = {{y : 0}} transition = {{duration : 0.5, ease : 'easeOut'}}>
             <Avatar src = {icon} size = "large" />
             <Typography.Title level = {2} className = "logo">
                 <Link to = "/">Cryptodashboard</Link>
@@ -40,7 +41,7 @@ function Navbar() {
             <Button className = 'menu-control-container' onClick={() => setActiveMenu(!activeMenu)}>
                 <MenuOutlined />
             </Button>
-        </div>
+        </motion.div>
 
         {activeMenu && <Menu theme = "dark">
             <Menu.Item icon = {<HomeOutlined />}>

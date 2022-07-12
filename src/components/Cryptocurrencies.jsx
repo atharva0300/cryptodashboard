@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 
 
 import {useGetCryptosQuery} from '../services/cryptoApi';
+import Loader from './Loader';
 
 function Cryptocurrencies({simplified}) {
   const count = simplified ? 10 : 100;
@@ -33,7 +34,7 @@ function Cryptocurrencies({simplified}) {
   }, [cryptosList, searchTerm])
 
   if(isFetching){
-    return 'Loading...';
+    return <Loader />
   }
 
   return (
