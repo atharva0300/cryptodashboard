@@ -118,7 +118,7 @@ a:hover{
   }
 
   .menu-control-container{
-      display: block !important;
+      display : block !important;
   }
 
   .ant-menu{

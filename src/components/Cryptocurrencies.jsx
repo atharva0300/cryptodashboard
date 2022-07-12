@@ -46,9 +46,9 @@ function Cryptocurrencies({simplified}) {
 
       <Row gutter = {[32 , 32]} className= "crypto-card-container">
         {cryptos?.map((currency) => (
-          <Col xs = {24} sm = {12} lg = {6} className = "crypto-card" key = {currency.id}>
-            <Link to = {`/crypto/${currency.rank}`}>
-              <Card title = {`${currency.id}. ${currency.name}`} extra = {<img className='crypto-image' src = {currency.iconUrl} />} hoverable>
+          <Col xs = {24} sm = {12} lg = {6} className = "crypto-card" key = {currency.uuid}>
+            <Link to = {`/crypto/${currency.uuid}`}>
+              <Card title = {`${currency.rank}. ${currency.name}`} extra = {<img className='crypto-image' src = {currency.iconUrl} />} hoverable>
                 <p>Price : {millify(currency.price)}</p>
                 <p>Price : {millify(currency.marketCap)}</p>
                 <p>Price : {millify(currency.change)}%</p>
